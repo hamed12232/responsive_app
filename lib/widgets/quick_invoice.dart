@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_app/utils/app_style.dart';
 import 'package:responsive_app/widgets/custom_background_container.dart';
 import 'package:responsive_app/widgets/latest_transactons.dart';
+import 'package:responsive_app/widgets/quick_invoice_form.dart';
 import 'package:responsive_app/widgets/quick_invoice_header.dart';
 
 class QuickInvoice extends StatelessWidget {
@@ -18,6 +19,8 @@ class QuickInvoice extends StatelessWidget {
           Text('Latest Transaction', style: AppStyles.styleMedium16(context)),
           SizedBox(height: 12),
           LatestTransactonsListView(),
+          Divider(height: 48,color: Color(0xffF1F1F1),),
+          QuickInvoiceForm(),
           
         ],
       ),
